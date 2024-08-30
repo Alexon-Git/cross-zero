@@ -30,7 +30,7 @@ const Game: React.FC<IGame> = ({
 
   useEffect(() => {
     if (gameStatus?.isFinished && !isSpectator) {
-      window.Telegram.WebApp.MainButton.text = 'Restart Game';
+      window.Telegram.WebApp.MainButton.text = 'Начать заново';
       window.Telegram.WebApp.MainButton.show();
       window.Telegram.WebApp.MainButton.onClick(restartGame);
     }
