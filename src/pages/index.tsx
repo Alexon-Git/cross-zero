@@ -44,13 +44,13 @@ const Home = () => {
     );
     default:
     case 'Unnasigned': return <>
-      <span className={styles['home__title']}>Tic Tac Toe</span>
+      <span className={styles['home__title']}>НИЛ ТЕСТ</span>
       <div className={styles['home__buttons']}>
         <div className={styles['home__play-vs-friends']}>
           {onlyAI && <Tooltip message='You need to add the bot to the group and start from there to play against your friends.' />}
-          <Button onClick={() => setGameType('Player')} text='Play vs friend' disabled={onlyAI}/>
+          <Button onClick={() => setGameType('Player')} text='Играть с другом' disabled={onlyAI}/>
         </div>
-        <Button onClick={() => setGameType('BOT')} text='Play vs Bot'/>
+        <Button onClick={() => setGameType('BOT')} text='Играть с ботом'/>
       </div>
     </>;
     }
